@@ -20,7 +20,7 @@ namespace WiFiMapDataImporter
                 networks,
                 new Importer.ImportOptions
                 {
-                    Database = "wifi-map", Collection = "networks"
+                    Database = "wifi_map", Collection = "networks"
                 }
             );
         }
