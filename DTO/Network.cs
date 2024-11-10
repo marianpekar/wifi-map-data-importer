@@ -31,6 +31,7 @@ public class Network(string bssid)
     public string Bssid { get; set; }
     public string Ssid { get; set; }
     public int Frequency { get; set; }
+    public string Capabilities { get; set; }
     public long LastUpdateTime { get; set; }
     public Level[] Levels { get; set; }
 }

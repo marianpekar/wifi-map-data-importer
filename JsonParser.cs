@@ -21,6 +21,7 @@ public static class JsonParser
                 Ssid = networkEntry.Value!["ssid"]?.ToString(),
                 Frequency = networkEntry.Value!["frequency"]!.ToObject<int>(),
                 LastUpdateTime = networkEntry.Value["lastUpdateTime"]!.ToObject<long>(),
+                Capabilities = networkEntry.Value["capabilities"]!.ToString(),
             };
 
             var levels = new List<Network.Level>();
