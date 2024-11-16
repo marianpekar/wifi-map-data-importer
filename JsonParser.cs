@@ -20,7 +20,6 @@ public static class JsonParser
                 Bssid = networkEntry.Key,
                 Ssid = networkEntry.Value!["ssid"]?.ToString(),
                 Frequency = networkEntry.Value!["frequency"]!.ToObject<int>(),
-                LastUpdateTime = networkEntry.Value["lastUpdateTime"]!.ToObject<long>(),
                 Capabilities = networkEntry.Value["capabilities"]!.ToString(),
             };
 
